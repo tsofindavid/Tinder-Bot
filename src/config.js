@@ -1,6 +1,6 @@
 module.exports = {
-    tgToken : "693027940:AAF8J9PMNX_uFg4uERKtygOly7MzOVZx1EE",
-    admin_id : 333402933,
+    tgToken : "",
+    admin_id : "",
     port : 3000,
     // URL: "https://f256e1a12a87.ngrok.io",
     URL: "https://0c887638ce18.ngrok.io",
