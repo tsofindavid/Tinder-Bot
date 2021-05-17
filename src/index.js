@@ -1,16 +1,16 @@
 const config = require('./config');
+require('./telegram')
+require('./server');
 const tinder = require('./tinder-api');
 
 
-const client = new tinder();
-console.log(client)
+// const client = new tinder();
+// console.log(client)
 
-// client.getProfile(res=>{
-//     console.log(res)
+
+
+
+// client.nearByMe(res=>{
+//     console.log(res.data)
 // })
-
-
-client.nearByMe(res=>{
-    console.log(res.data)
-})
 

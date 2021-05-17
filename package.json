@@ -4,12 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node src/index.js"
+    "test": "node src/index.js",
+    "telegram": "node src/telegram.js"
   },
   "author": "David Tsofin",
   "license": "ISC",
   "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
     "https": "^1.0.0",
-    "request": "^2.88.2"
+    "node-fetch": "^2.6.1",
+    "node-telegram-bot-api": "^0.53.0",
+    "pug": "^3.0.2",
+    "request": "^2.88.2",
+    "telegraf": "^4.3.0"
   }
 }

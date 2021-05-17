@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "00d03889-2953-43b2-a793-10ccd0be2084",
+		"name": "tinder api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "home page",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Auth-Token",
+						"value": "77dd30fc-c38e-432a-ab7f-97eec84b9dad ",
+						"type": "text"
+					},
+					{
+						"key": "locale",
+						"value": "en",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.gotinder.com/v2/profile?include=account%2Cuser",
+					"protocol": "https",
+					"host": [
+						"api",
+						"gotinder",
+						"com"
+					],
+					"path": [
+						"v2",
+						"profile"
+					],
+					"query": [
+						{
+							"key": "include",
+							"value": "account%2Cuser"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "matches",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Auth-Token",
+						"value": "77dd30fc-c38e-432a-ab7f-97eec84b9dad ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.gotinder.com/v2/matches?count=10",
+					"protocol": "https",
+					"host": [
+						"api",
+						"gotinder",
+						"com"
+					],
+					"path": [
+						"v2",
+						"matches"
+					],
+					"query": [
+						{
+							"key": "count",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "nearByMe",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "like",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Auth-Token",
+						"value": "77dd30fc-c38e-432a-ab7f-97eec84b9dad ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.gotinder.com/like/",
+					"protocol": "https",
+					"host": [
+						"api",
+						"gotinder",
+						"com"
+					],
+					"path": [
+						"like",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
